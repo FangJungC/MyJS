@@ -19,6 +19,10 @@
     let myPassword = "";
     let answer = "123456";
     do {
+        if (myPassword == answer) {
+            break;
+        }
+        alert("密碼錯誤！");
         myPassword = prompt("請輸入密碼", "abc");
     } while (myPassword != answer);
 
