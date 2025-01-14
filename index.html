@@ -8,55 +8,22 @@
 </head>
 
 <body>
-    <!--挑戰一 老師版本-->
-    <script>
+<!-- 挑戰四：用戶驗證
+請輸入密碼：abc
+密碼錯誤！再試一次。
+請輸入密碼：12345
+密碼正確！
+-->
+<!--使用do while-->
+<script>
+    let myPassword = "";
+    let answer = "123456";
+    do {
+        myPassword = prompt("請輸入密碼", "abc");
+    } while (myPassword != answer);
 
-        // function getTime() {
-        // const currentDate = new Date();
-        // // 改成let
-        // let currentHours = 3;
-        // const currentMinutes = currentDate.getMinutes();
-        // const currentSeconds = currentDate.getSeconds();
-        // // //方法一：
-        // // // 設定上下午
-        // // let format = "";
-        // // if (currentHours > 12) {
-        // // format = "下午";
-        // // currentHours -= 12;
-        // // }
-        // // else {
-        // // format = "上午";
-        // // }
-
-        // //方法二（條件式簡寫）：變數=(條件分析運算式)?結果一:結果二
-        // let format = (currentHours > 12) ? "下午" : "上午";
-        // if (currentHours > 12) {
-        // currentHours -= 12;
-        // }
-
-        // alert(`現在時間是 ${format}${currentHours}點 ${currentMinutes}分${currentSeconds}秒`);
-
-        // }
-        // getTime();
-    </script>
-
-    <!-- 挑戰三：顯示出五層星星金字塔 -->
-    <script>
-        /*for (變數的初始值; 檢查是否符合執行條件; 執行完迴圈的固定變化) {
-            迴圈內部敘述
-        }
-        若想要讓結果能分行：i + "<br>"
-        */
-        for (let i = 0; i <5; i++) {
-            for(let j = 0; j <= i; j++){
-                document.write("*");
-            }
-            document.write("<br>");
-        }
-        document.write(result);
-    </script>
-
-
+    alert("密碼正確！");
+</script>
 
 
 </body>
